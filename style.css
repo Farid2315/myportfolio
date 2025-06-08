@@ -601,3 +601,226 @@ animation: animate-gradient 2.5s linear infinite;
   animation-iteration-count: infinite;
 
 }
+
+/* Base responsive styles */
+html {
+  font-size: 16px;
+}
+
+/* Enhanced media queries for better responsiveness */
+@media screen and (max-width: 1200px) {
+  .dev-stack {
+    flex-direction: column;
+    height: auto;
+    margin-top: 2vw;
+    margin-left: 1vw;
+  }
+
+  .left-container,
+  .right-container {
+    position: relative;
+    width: 90%;
+    margin: 2vw auto;
+    height: auto;
+    min-height: 400px;
+  }
+
+  .right-container {
+    margin-right: auto;
+  }
+
+  .right-container p {
+    font-size: 2vw;
+  }
+
+  .right-container img {
+    height: 3.5vw;
+    width: 3.5vw;
+  }
+
+  .left-container .type-writer {
+    font-size: 4.5vw;
+  }
+
+  .left-container p {
+    font-size: 1.5vw;
+    padding: 30px 20px;
+  }
+
+  .nav-slide {
+    width: 50%;
+    right: -50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .nav {
+    padding: 20px 30px;
+  }
+
+  .nav i {
+    font-size: 24px;
+  }
+
+  .nav-slide {
+    width: 70%;
+    right: -70%;
+    padding: 40px;
+  }
+
+  .nav-slide a {
+    font-size: 24px;
+  }
+
+  .left-container .type-writer {
+    font-size: 36px;
+  }
+
+  .text-opacity-animation {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-wrapper {
+    width: 90%;
+  }
+
+  .contact-wrapper form {
+    width: 100%;
+  }
+
+  .horizontal-scroll h1 {
+    font-size: 24px;
+  }
+
+  .me {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+
+  .nav {
+    padding: 15px 20px;
+  }
+
+  .left-container .type-writer {
+    font-size: 28px;
+  }
+
+  .left-container p {
+    font-size: 14px;
+    padding: 20px 15px;
+  }
+
+  .right-container p {
+    font-size: 18px;
+  }
+
+  .right-container img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .right-container .stack-img {
+    gap: 15px;
+  }
+
+  .text-opacity-animation {
+    font-size: 16px;
+  }
+
+  .me {
+    height: 120px;
+    width: 120px;
+  }
+
+  .contact-wrapper h4 {
+    font-size: 14px;
+  }
+
+  .contact-container h1 {
+    font-size: 24px;
+  }
+
+  .contact-wrapper form input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .contact-wrapper form #btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile-specific optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+
+  .nav-slide {
+    width: 100%;
+    right: -100%;
+  }
+
+  .nav-slide a {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+
+  .string {
+    display: none;
+  }
+}
+
+/* Landscape mode optimizations */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .dev-stack {
+    margin-top: 1vw;
+  }
+
+  .left-container,
+  .right-container {
+    min-height: 300px;
+  }
+
+  .me {
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+  }
+
+  .text-opacity-animation {
+    font-size: 16px;
+  }
+}
+
+/* High-resolution screens */
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 18px;
+  }
+
+  .left-container .type-writer {
+    font-size: 5vw;
+  }
+
+  .right-container img {
+    height: 3vw;
+    width: 3vw;
+  }
+}
