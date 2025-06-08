@@ -10,6 +10,7 @@
   box-sizing: border-box;
   color: beige;
   font-family: "Montserrat";
+  -webkit-tap-highlight-color: transparent;
 }
 html,
 body {
@@ -713,89 +714,78 @@ html {
   }
 
   .nav {
-    padding: 15px 20px;
+    padding: 10px 15px;
   }
 
-  .left-container .type-writer {
-    font-size: 28px;
+  .nav h1 {
+    font-size: 1.5rem;
   }
 
-  .left-container p {
-    font-size: 14px;
-    padding: 20px 15px;
-  }
-
-  .right-container p {
-    font-size: 18px;
-  }
-
-  .right-container img {
-    height: 30px;
-    width: 30px;
-  }
-
-  .right-container .stack-img {
-    gap: 15px;
-  }
-
-  .text-opacity-animation {
-    font-size: 16px;
-  }
-
-  .me {
-    height: 120px;
-    width: 120px;
-  }
-
-  .contact-wrapper h4 {
-    font-size: 14px;
-  }
-
-  .contact-container h1 {
-    font-size: 24px;
-  }
-
-  .contact-wrapper form input {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .contact-wrapper form #btn {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
-}
-
-/* Mobile-specific optimizations */
-@media (hover: none) and (pointer: coarse) {
-  .cursor {
-    display: none;
+  .nav i {
+    font-size: 1.5rem;
   }
 
   .nav-slide {
     width: 100%;
     right: -100%;
+    padding: 20px;
   }
 
   .nav-slide a {
-    font-size: 20px;
+    font-size: 1.2rem;
     margin: 15px 0;
   }
 
-  .string {
-    display: none;
+  .nav-slide i {
+    font-size: 1.5rem;
+    top: 10px;
+    right: 10px;
   }
-}
 
-/* Landscape mode optimizations */
-@media screen and (max-height: 500px) and (orientation: landscape) {
   .dev-stack {
-    margin-top: 1vw;
+    flex-direction: column;
+    margin: 0;
+    padding: 10px;
   }
 
-  .left-container,
+  .left-container {
+    width: 100%;
+    margin: 10px 0;
+    min-height: auto;
+    border-radius: 15px;
+  }
+
+  .left-container .type-writer {
+    font-size: 1.8rem;
+    margin: 10px;
+  }
+
+  .left-container p {
+    font-size: 1rem;
+    padding: 15px 10px;
+  }
+
   .right-container {
-    min-height: 300px;
+    width: 100%;
+    margin: 10px 0;
+    min-height: auto;
+    border-radius: 15px;
+    padding: 15px;
+  }
+
+  .right-container p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .right-container .stack-img {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .right-container img {
+    height: 25px;
+    width: 25px;
   }
 
   .me {
@@ -805,22 +795,171 @@ html {
   }
 
   .text-opacity-animation {
-    font-size: 16px;
+    font-size: 1rem;
+    padding: 0 15px;
+    line-height: 1.4;
+  }
+
+  .text-opacity-animation.create-color {
+    font-size: 1.1rem;
+  }
+
+  .page3 .horizontal-scroll h1 {
+    font-size: 1.5rem;
+    padding: 0 15px;
+  }
+
+  .page4 {
+    padding: 10px;
+  }
+
+  .image-container {
+    gap: 10px;
+  }
+
+  .images {
+    min-width: 280px;
+    height: 200px;
+  }
+
+  .images img {
+    border-radius: 10px;
+  }
+
+  .contact-container {
+    padding: 15px;
+  }
+
+  .contact-wrapper {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .contact-wrapper h4 {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .contact-wrapper form {
+    gap: 10px;
+  }
+
+  .contact-wrapper form input {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+
+  .contact-wrapper form #btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+
+  .contact-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-container h1 i {
+    font-size: 1.5rem;
   }
 }
 
-/* High-resolution screens */
-@media screen and (min-width: 1920px) {
+/* Small mobile devices */
+@media screen and (max-width: 360px) {
   html {
-    font-size: 18px;
+    font-size: 11px;
   }
 
   .left-container .type-writer {
-    font-size: 5vw;
+    font-size: 1.5rem;
   }
 
   .right-container img {
-    height: 3vw;
-    width: 3vw;
+    height: 20px;
+    width: 20px;
+  }
+
+  .images {
+    min-width: 240px;
+    height: 180px;
+  }
+}
+
+/* Mobile landscape optimizations */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .dev-stack {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .left-container,
+  .right-container {
+    width: 48%;
+    min-height: 250px;
+  }
+
+  .me {
+    height: 80px;
+    width: 80px;
+    margin-top: 30px;
+  }
+
+  .text-opacity-animation {
+    font-size: 0.9rem;
+  }
+
+  .nav-slide {
+    padding: 20px;
+  }
+
+  .nav-slide a {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+
+  .string {
+    display: none;
+  }
+
+  /* Improve touch targets */
+  .nav-slide a,
+  .contact-wrapper form input,
+  .contact-wrapper form #btn {
+    min-height: 44px;
+  }
+
+  /* Add active states for touch */
+  .nav-slide a:active,
+  .contact-wrapper form #btn:active {
+    opacity: 0.7;
+  }
+
+  /* Prevent text selection */
+  .nav-slide,
+  .contact-wrapper form input,
+  .contact-wrapper form #btn {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
+
+/* Fix for iOS Safari 100vh issue */
+@supports (-webkit-touch-callout: none) {
+  .page1,
+  .page2,
+  .page3,
+  .page4,
+  .page5 {
+    min-height: -webkit-fill-available;
   }
 }
