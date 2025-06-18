@@ -473,7 +473,7 @@ animation: animate-gradient 2.5s linear infinite;
   position: absolute;
   left: 0;
   height: 10px;
-  background: #5c1515;
+  background: #dd0129;
   animation: lineH 4s 5s infinite linear;
 }
 #lineh2{
@@ -481,7 +481,7 @@ animation: animate-gradient 2.5s linear infinite;
   left: 0;
   top: 10px;
   height: 10px;
-  background: #AA2B00;
+  background: #dd0129;
   animation: lineH 5s 0.5s infinite linear;
 }
 #lineh3{
@@ -489,7 +489,7 @@ animation: animate-gradient 2.5s linear infinite;
   left: 0;
   top: 70px;
   height: 10px;
-  background: #920f0f;
+  background: #dd0129;
   animation: lineH 5s 2s infinite linear;
 }
 #lineh4{
@@ -497,7 +497,7 @@ animation: animate-gradient 2.5s linear infinite;
   right: 0;
   top: 30px;
   height: 10px;
-  background: #df2828;
+  background: #dd0129;
   animation: lineH 5s 1s infinite linear;
 }
 #lineh5{
@@ -505,7 +505,7 @@ animation: animate-gradient 2.5s linear infinite;
   left: 0;
   top: 50px;
   height: 10px;
-  background: #d50000;
+  background: #dd0129;
   animation: lineH 5s 4s infinite linear;
 }
 #lineh6{
@@ -513,7 +513,7 @@ animation: animate-gradient 2.5s linear infinite;
   right: 0;
   top: 600px;
   height: 10px;
-  background: #dd0909;
+  background: #dd0129;
   animation: lineH 4s 1s infinite linear;
 }
 #lineh7{
@@ -521,7 +521,7 @@ animation: animate-gradient 2.5s linear infinite;
   right: 0;
   top: 190px;
   height: 10px;
-  background: #D50055;
+  background: #dd0129;
   animation: lineH 4s 0s infinite linear;
 }
 #lineh8{
@@ -529,7 +529,7 @@ animation: animate-gradient 2.5s linear infinite;
   left: 0;
   top: 220px;
   height: 10px;
-  background: #fc0000;
+  background: #dd0129;
   animation: lineH 4s 1.5s infinite linear;
 }
 #lineh9{
@@ -537,7 +537,7 @@ animation: animate-gradient 2.5s linear infinite;
   left: 0;
   top: 250px;
   height: 10px;
-  background: #725555;
+  background: #dd0129;
   animation: lineH 5s 2s infinite linear;
 }
 #lineh10{
@@ -545,7 +545,7 @@ animation: animate-gradient 2.5s linear infinite;
   right: 0;
   top: 280px;
   height: 10px;
-  background: #f5f8f9;
+  background: #dd0129;
   animation: lineH 4s 3s infinite linear;
 }
 #lineh11{
@@ -553,7 +553,7 @@ animation: animate-gradient 2.5s linear infinite;
   right: 0;
   top: 310px;
   height: 10px;
-  background: #fd0808;
+  background: #dd0129;
   animation: lineH 4s 1s infinite linear;
 }
 #lineh12{
@@ -561,7 +561,7 @@ animation: animate-gradient 2.5s linear infinite;
   right: 0;
   top: 340px;
   height: 10px;
-  background: #d00808;
+  background: #dd0129;
   animation: lineH 6s 1s infinite linear;
 }
 @keyframes lineH{
