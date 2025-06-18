@@ -254,3 +254,10 @@ window.addEventListener("scroll", () => {
 
   currentScroll = window.scrollY;
 });
+
+// Form submission handling
+const form = document.querySelector('form');
+form.addEventListener('submit', function(e) {
+  // Show alert when form is submitted
+  alert('Form submitted successfully!');
+});
